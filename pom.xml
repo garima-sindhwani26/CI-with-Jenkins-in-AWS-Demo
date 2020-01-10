@@ -22,6 +22,11 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+       	<dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>javax.servlet-api</artifactId>
+  		<version>3.0.1</version>
+    	</dependency>
     </dependencies>
     <build>
         <pluginManagement>
@@ -50,4 +55,17 @@
             </plugin>
         </plugins>
     </build>
+       <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://34.93.113.190:8081/repository/Sample-rel/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://34.93.113.190:8081/repository/Sample-rel/</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
 </project>
